@@ -1,0 +1,34 @@
+
+<div class="new-message">
+    <div class="new-message__header">
+        <h2 class="section-heading">New Message</h2>
+    </div>
+
+    <!-- Error messages -->
+    <div class="new-message__form-error">
+      <div class="new-message__form-error-message">
+        {{ getMessageLengthError() }}
+        {{ getSubmitError() }}
+      </div>
+    </div>
+    
+    <form [formGroup]="sendMessageForm" class="new-message__form" (submit)="sendMessage()">
+      <div class="new-message__form-input-container">
+        <div class="new-message__form-input-label">Phone Number</div>
+        <input id="phone-number" type="text" formControlName="phoneNumber" class="new-message__form-input-input" />
+      </div>
+      
+      <!-- Message input -->
+      <div class="new-message__form-input-container">
+        <div class="new-message__form-input-label">Message</div>
+        <textarea id="message" type="text" formControlName="message" class="new-message__form-input-input new-message__form-input-message"></textarea>
+      </div>
+      <div class="new-message__form-counter">
+        <div class="new-message__form-counter-value" [style.color]="getMessageLengthColor()">{{ getMessageLength() }} / 250</div>
+      </div>
+      <div class="new-message__form-button-container">
+        <a (click)="clearForm()" class="new-message__form-button-container-button-clear">Clear</a>
+        <button type="submit" class="new-message__form-button-container-button-submit">Submit</button>
+      </div>
+    </form>
+</div>

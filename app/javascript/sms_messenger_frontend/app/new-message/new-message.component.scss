@@ -1,0 +1,139 @@
+.new-message {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    height: 100vh;
+}
+
+.new-message__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-message__header-title {
+    font-size: 24px;
+}
+
+.new-message__header-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+} 
+
+.new-message__header-actions-item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.new-message__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.new-message__form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.new-message__form-input-label {
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.new-message__form-input-input {
+    font-size: 16px;
+    border: 1px solid #868686;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.new-message__form-input-input:focus {
+    outline: none;
+}
+
+.new-message__form-input-input::placeholder {
+    color: #868686;
+}
+
+.new-message__form-input-input:focus::placeholder {
+    color: #868686;
+}
+
+.new-message__form-input-input:focus {
+    outline: none;
+}
+
+.new-message__form-input-input:focus::placeholder {
+    color: #868686;
+}
+
+.new-message__form-input-input:focus {
+    outline: none;
+}
+
+.new-message__form-input-input:focus::placeholder {
+    color: #868686;
+}
+
+.new-message__form-input-message {
+    height: 100px;
+    resize: none;
+}
+
+.new-message__form-button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.new-message__form-button-container button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.new-message__form-button-container button:hover {
+    background-color: #868686;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid #868686;
+}
+
+.new-message__form-button-container button:active {
+    background-color: #868686;
+}
+
+.new-message__form-button-container-button-clear {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.new-message__form-button-container-button-submit {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-message__form-input-container-error {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.new-message__form-input-container-error-message {
+    color: red;
+    font-size: 12px;
+}
+

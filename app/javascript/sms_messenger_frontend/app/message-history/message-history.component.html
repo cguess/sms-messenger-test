@@ -1,0 +1,22 @@
+<div class="message-history__header">
+    <div class="message-history__header-title">
+        <h1>Message History ({{ messages.length }})</h1>
+    </div>
+    <div class="message-history__header-actions">
+        <div class="message-history__header-actions-item">
+            <button routerLink="/new-message" routerLinkActive="active" ariaCurrentWhenActive="page">New message</button>
+        </div>
+    </div>
+</div>
+
+<div class="message-history">
+    <div *ngFor="let message of messages" class="message-history__message">        
+        <div class="message-history__message-sender-container">
+            <div class="message-history__message-sender">{{ message.receiver }}</div>
+            <div class="message-history__message-date">{{ message.date | date:'EEEE dd-MMMM-yyyy HH:mm:ss z' }}</div>
+        </div>
+
+        <p class="message-history__message-text">{{ message.text }}</p>
+        <div class="message-history__message-counter">{{ message.text.length }} / 250</div>
+    </div>
+</div>
